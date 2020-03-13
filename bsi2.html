@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BSI Case 2: Winning Caller</title>
+    <script src="bsi2.js"></script>
+    <script src="debug.js"></script>
+</head>
+<body onload="debugConsole = new DebugConsole()">
+<form name="callform" action="bsi2.php" method="post">
+    <img src="radio.png"/>
+    <label>Caller name:</label>
+    <input type="text" id="caller" name="caller" placeholder="Next caller"/>
+    <input type="button" value="Call" onclick="checkWinner(this.form, document.getElementById('caller').value, 7)"/>
+</form>
+<div id="debug"></div>
+</body>
+</html>
